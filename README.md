@@ -11,7 +11,7 @@ Os benefícios do e-commerce são diversos, incluindo a conveniência de realiza
 
 
 
-<img src="img-de-milhoes.jpg" width="128" height="128" alt="scrcpy" align="right" />
+<img src="./img-de-milhoes.jpg"/>
 
 
 
