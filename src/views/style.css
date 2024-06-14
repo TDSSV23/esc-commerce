@@ -1,40 +1,66 @@
 body {
-  font-family: Arial, sans-serif;
-}
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  #produtos, #categoria, #clientes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .produto-item, .categoria-item, .cliente-item {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+  }
+  
+  .produto-item h3, .categoria-item h3, .cliente-item h3 {
+    margin-top: 0;
+  }
+  
+  .produto-item p, .categoria-item p, .cliente-item p{
+    margin-bottom: 0;
+  }
 
-#cadastroForm {
-  width: 70vw;
-  margin: 0 auto;
-  padding: 15px;
-  background-color: #f0f8ff;
-  border: 1px solid #1e90ff;
-  border-radius: 5px;
-}
 
-#cadastroForm label {
-  display: block;
-  margin-bottom: 5px;
-  color: #1e90ff;
-}
-
-#cadastroForm input[type="text"],
-#cadastroForm input[type="password"] {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #1e90ff;
-  border-radius: 3px;
-}
-
-#cadastroForm input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #1e90ff;
-  color: white;
-  cursor: pointer;
-}
-
-#cadastroForm input[type="submit"]:hover {
-  background-color: #00bfff;
-}
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  #cadastroForm {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  
