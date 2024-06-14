@@ -10,19 +10,7 @@ O **e-commerce** se caracteriza pela utilização de plataformas digitais que fa
 Os benefícios do e-commerce são diversos, incluindo a conveniência de realizar compras a qualquer hora e lugar, a ampliação do mercado consumidor além das fronteiras geográficas e a redução de custos operacionais em comparação com lojas físicas. Por outro lado, também apresenta desafios, como a necessidade de assegurar a segurança das transações online, a gestão eficiente de estoque e logística e a manutenção de um atendimento ao cliente de alta qualidade.
 
 
-
-<img src="./img-de-milhoes.jpg"/>
-
-
-
-
-
-
-
-
-
-
-
+--------------- TENTA COLOCAR UMA IMAGEM OU VIDEO DE PREFERENCIA (CURTO) MOSTRANDO APENAS A FUNCIONALIDADE NO POSTMAN MAYCK, QUANDO COLOCAR PODE APAGAR --------------
 
 # Pré-requisitos de acesso
 
@@ -45,4 +33,27 @@ Para editar as informações de um usuário, acesse a lista de usuários e selec
 Para listar todos os usuários cadastrados, acesse a seção de gerenciamento de usuários. A interface exibirá uma lista com os dados essenciais de cada usuário, como nome, e-mail e data de cadastro. Pode-se incluir funcionalidades de busca e filtros para facilitar a localização de usuários específicos, bem como opções para exportar a lista em diversos formatos (por exemplo, CSV ou PDF).
 
 Este modo de uso padronizado garante uma gestão eficiente e organizada dos usuários, permitindo que operações comuns sejam realizadas de forma segura e intuitiva.
+
+# Exemplos Inserir, Editar, Deletar e Listar Usuários
+
+- **Como inserir Usuários**
+  
+- **Como editar os Usuários**
+  
+- **Como deletar os Usuários**
+ 
+- **Como listar todos os Usuários**
+
+
+COLOCA EM CADA UM OS EXEMPLOS COM O CODIGO PRONTO JÁ MAYCK, QUANDO COLOCAR PODE APAGAR ESSA MENSAGEM
+
+
+
+# Recursos utilizados no projeto
+
+- **Visual Studio Code(VSCODE)**
+- **Postman**
+- **MySQL Workbench**
+- **API utilizando Node.js**
+ 
 
