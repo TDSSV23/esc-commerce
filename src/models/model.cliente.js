@@ -1,4 +1,5 @@
 import { con } from "../config/database.js";
+import bcrypt from 'bcrypt';
 
 class ClienteModel {
 
@@ -15,6 +16,11 @@ class ClienteModel {
 
     // Método para criar um novo cliente
     static createCliente(nome, email, senha, logradouro, numero, bairro, cidade, uf, cep, callBack) {
+        //apenas numeros
+        numero = numero.replace(/\D/g, '');
+        //criptografando
+        const hash = bcrypt.hashSync(senha, 10);
+        senha = hash
         let sql = `insert into cliente (nome, email, senha, logradouro, numero, bairro, cidade, uf, cep) values (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
         con.query(sql, [nome, email, senha, logradouro, numero, bairro, cidade, uf, cep], function (err, result) {
             if (err)
