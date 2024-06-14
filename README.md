@@ -9,6 +9,21 @@ O **e-commerce** se caracteriza pela utilização de plataformas digitais que fa
 
 Os benefícios do e-commerce são diversos, incluindo a conveniência de realizar compras a qualquer hora e lugar, a ampliação do mercado consumidor além das fronteiras geográficas e a redução de custos operacionais em comparação com lojas físicas. Por outro lado, também apresenta desafios, como a necessidade de assegurar a segurança das transações online, a gestão eficiente de estoque e logística e a manutenção de um atendimento ao cliente de alta qualidade.
 
+
+
+<img src="img-de-milhoes.jpg" width="128" height="128" alt="scrcpy" align="right" />
+
+
+
+
+
+
+
+
+
+
+
+
 # Pré-requisitos de acesso
 
 Para realizar o acesso ao nosso projeto é importante utilizar um navegador web para fazer a visualização do nosso front-end, para nosso back-end é recomendado utilizar o aplicativo desktop Postman e o MySQL Workbench.
