@@ -45,7 +45,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 - DELETE - para deletar: **https://localhost:3001/clientes/:id**
 
 - ### Exemplo JSON
-  {
+`  {
     "nome": "nome_pessoa",
     "email": "email@email.com.br",
     "senha": "1111",
@@ -55,7 +55,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
     "cidade": "nome ciddade",
     "uf": "UF",
     "cep": "11100000"
-}
+}`
  
 # Exemplos Inserir, Editar, Deletar e Listar Produtos
 
@@ -68,13 +68,13 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 - DELETE - para deletar: **https://localhost:3001/produtos/:id**
 
 -   ### Exemplo JSON
-   {
+`   {
    "nome": "nome do produto" , 
    "descricao": "breve descrição", 
    "preco": "1000", 
    "qtd_estoque": "2", 
    "id_categoria": "3"
-}
+}`
 
   # Exemplos Inserir, Editar, Deletar e Listar Categorias
 
@@ -87,9 +87,9 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 - DELETE - para deletar: **https://localhost:3001/categorias/:id**
 
 -   ### Exemplo JSON
-  {
+`  {
    "nome": "categoria"
-}
+}`
 
   # Exemplos Inserir, Editar, Deletar e Listar Pedidos
 
@@ -102,7 +102,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 - DELETE - para deletar: **https://localhost:3001/pedidos/:id**
 
 -   ### Exemplo JSON
-  {
+`  {
     "id_pedido": 1,
     "id_cliente": 2,
     "data_criacao": "2024-06-12",
@@ -119,7 +119,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
             "valor_unitario": 29.99
         }
     ]
-}
+}`
 
 
 ## Informações de uso 
