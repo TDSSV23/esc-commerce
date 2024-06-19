@@ -156,7 +156,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 
 ### Parametros
 - Nas rotas *PUT* e *DELETE* é preciso informar o id do registro como parametro ( `:id` )
-- Para inserir ou editar é preciso informar os atributos obrigatórios de cada uma das rotas, informtadas no arquivo JSON
+- Para inserir ou editar é preciso informar os atributos obrigatórios de cada uma das rotas, informadas por um arquivo JSON da requisição no body
 
 
 
