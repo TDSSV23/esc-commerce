@@ -10,7 +10,7 @@ O **e-commerce** se caracteriza pela utilização de plataformas digitais que fa
 Os benefícios do e-commerce são diversos, incluindo a conveniência de realizar compras a qualquer hora e lugar, a ampliação do mercado consumidor além das fronteiras geográficas e a redução de custos operacionais em comparação com lojas físicas. Por outro lado, também apresenta desafios, como a necessidade de assegurar a segurança das transações online, a gestão eficiente de estoque e logística e a manutenção de um atendimento ao cliente de alta qualidade.
 
 
---------------- TENTA COLOCAR UMA IMAGEM OU VIDEO DE PREFERENCIA (CURTO) MOSTRANDO APENAS A FUNCIONALIDADE NO POSTMAN MAYCK, QUANDO COLOCAR PODE APAGAR --------------
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/8799a55c-1d3b-4ebf-b9b8-c78a798dabbb)
 
 # Pré-requisitos de acesso
 
@@ -20,19 +20,19 @@ Para realizar o acesso ao nosso projeto é importante utilizar um navegador web 
 
 # Exemplos de uso
 
-- **Inserir Usuário**
-Para inserir um novo usuário no sistema, deve-se acessar a interface de gerenciamento de usuários e selecionar a opção "Adicionar Usuário". Será necessário fornecer informações obrigatórias, como nome, e-mail e senha. Em alguns casos, pode-se solicitar dados adicionais, como número de telefone e endereço. Após preencher os campos requeridos, deve-se confirmar a inserção para que o novo usuário seja salvo no banco de dados.
+- **Inserir Cliente**
+Para inserir um novo cliente no sistema, deve-se acessar a interface de gerenciamento de clientes e selecionar a opção "Adicionar Cliente". Será necessário fornecer informações obrigatórias, como nome, e-mail e senha. Em alguns casos, pode-se solicitar dados adicionais, como número de telefone e endereço. Após preencher os campos requeridos, deve-se confirmar a inserção para que o novo cliente seja salvo no banco de dados.
 
-- **Deletar Usuário**
-Para deletar um usuário existente, navegue até a lista de usuários cadastrados e localize o usuário que deseja remover. Selecione a opção "Deletar" ao lado do nome do usuário. O sistema geralmente solicita uma confirmação para evitar exclusões acidentais. Após a confirmação, o usuário será permanentemente removido do banco de dados.
+- **Deletar Cliente**
+Para deletar um cliente existente, navegue até a lista de clientes cadastrados e localize o cliente que deseja remover. Selecione a opção "Deletar" ao lado do nome do cliente. O sistema geralmente solicita uma confirmação para evitar exclusões acidentais. Após a confirmação, o cliente será permanentemente removido do banco de dados.
 
-- **Editar Usuário**
-Para editar as informações de um usuário, acesse a lista de usuários e selecione o usuário que precisa ser modificado. Clique na opção "Editar" e atualize os campos desejados, como nome, e-mail ou outros detalhes pessoais. Após realizar as alterações necessárias, salve as modificações para que as novas informações sejam atualizadas no sistema.
+- **Editar Cliente**
+Para editar as informações de um cliente, acesse a lista de clientes e selecione o cliente que precisa ser modificado. Clique na opção "Editar" e atualize os campos desejados, como nome, e-mail ou outros detalhes pessoais. Após realizar as alterações necessárias, salve as modificações para que as novas informações sejam atualizadas no sistema.
 
-- **Listar Usuários**
-Para listar todos os usuários cadastrados, acesse a seção de gerenciamento de usuários. A interface exibirá uma lista com os dados essenciais de cada usuário, como nome, e-mail e data de cadastro. Pode-se incluir funcionalidades de busca e filtros para facilitar a localização de usuários específicos, bem como opções para exportar a lista em diversos formatos (por exemplo, CSV ou PDF).
+- **Listar Clientes**
+Para listar todos os clientes cadastrados, acesse a seção de gerenciamento de clientes. A interface exibirá uma lista com os dados essenciais de cada cliente, como nome, e-mail e data de cadastro. Pode-se incluir funcionalidades de busca e filtros para facilitar a localização de clientes específicos, bem como opções para exportar a lista em diversos formatos (por exemplo, CSV ou PDF).
 
-Este modo de uso padronizado garante uma gestão eficiente e organizada dos usuários, permitindo que operações comuns sejam realizadas de forma segura e intuitiva.
+Este modo de uso padronizado garante uma gestão eficiente e organizada dos clientes, permitindo que operações comuns sejam realizadas de forma segura e intuitiva.
 
 # Exemplos Inserir, Editar, Deletar e Listar Clientes
 
@@ -43,6 +43,19 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos usu�
 - PUT - para editar: **https://localhost:3001/clientes/:id**
   
 - DELETE - para deletar: **https://localhost:3001/clientes/:id**
+
+- ### Exemplo JSON
+  {
+    "nome": "nome_pessoa",
+    "email": "email@email.com.br",
+    "senha": "1111",
+    "logradouro": "nome_rua",
+    "numero": "1234",
+    "bairro": "nome_bairro",
+    "cidade": "nome ciddade",
+    "uf": "UF",
+    "cep": "11100000"
+}
  
 # Exemplos Inserir, Editar, Deletar e Listar Produtos
 
@@ -54,6 +67,15 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos usu�
   
 - DELETE - para deletar: **https://localhost:3001/produtos/:id**
 
+-   ### Exemplo JSON
+   {
+   "nome": "nome do produto" , 
+   "descricao": "breve descrição", 
+   "preco": "1000", 
+   "qtd_estoque": "2", 
+   "id_categoria": "3"
+}
+
   # Exemplos Inserir, Editar, Deletar e Listar Categorias
 
 - GET - para listar: **https://localhost:3001/categorias**
@@ -63,6 +85,11 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos usu�
 - PUT - para editar: **https://localhost:3001/categorias/:id**
   
 - DELETE - para deletar: **https://localhost:3001/categorias/:id**
+
+-   ### Exemplo JSON
+  {
+   "nome": "categoria"
+}
 
   # Exemplos Inserir, Editar, Deletar e Listar Pedidos
 
@@ -74,7 +101,30 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos usu�
   
 - DELETE - para deletar: **https://localhost:3001/pedidos/:id**
 
+-   ### Exemplo JSON
+  {
+    "id_pedido": 1,
+    "id_cliente": 2,
+    "data_criacao": "2024-06-12",
+    "status": "Em processamento",
+    "itens": [
+        {
+            "id_produto": 7,
+            "quantidade": 2,
+            "valor_unitario": 19.99
+        },
+        {
+            "id_produto": 8,
+            "quantidade": 1,
+            "valor_unitario": 29.99
+        }
+    ]
+}
 
+
+## Informações de uso 
+- Nas rotas *PUT* e *DELETE* é preciso informar o id do registro
+- Para inserir ou editar é preciso informar os atributos obrigatórios de cada um 
 
 
 
