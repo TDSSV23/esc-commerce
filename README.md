@@ -37,12 +37,19 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 ## Exemplos Inserir, Editar, Deletar e Listar Clientes
 
 - GET - para listar: **https://localhost:3001/clientes**
-  
+ ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/22341725-2849-4852-9648-46cf144b1f09)
+
 - POST - para inserir: **https://localhost:3001/clientes**
-  
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/5a4ac07f-a3d1-410a-bc80-1c45cea23f72)
+
 - PUT - para editar: **https://localhost:3001/clientes/:id**
-  
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/77ad4e32-e835-4a6a-811b-ec598ab2c64d)
+
 - DELETE - para deletar: **https://localhost:3001/clientes/:id**
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/1e76ce2f-afda-427d-b94d-c6ea2f74b012)
 
 - ### Exemplo JSON
 `  {
@@ -56,10 +63,12 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
     "uf": "UF",
     "cep": "11100000"
 }`
+
  
 ## Exemplos Inserir, Editar, Deletar e Listar Produtos
 
 - GET - para listar: **https://localhost:3001/produtos**
+  
   
 - POST - para inserir: **https://localhost:3001/produtos**
   
@@ -80,11 +89,22 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 
 - GET - para listar: **https://localhost:3001/categorias**
   
+  ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/9495d7e3-4619-492a-a9e2-fadd48216341)
+
+  
 - POST - para inserir: **https://localhost:3001/categorias**
+  
+  ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/02b3eb62-b37f-4596-96b4-97443e8e13a0)
+
   
 - PUT - para editar: **https://localhost:3001/categorias/:id**
   
+  ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/6a75ba9d-c5a5-4bdf-9974-37f1722f1f41)
+
+  
 - DELETE - para deletar: **https://localhost:3001/categorias/:id**
+  
+  ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/bde1d061-8d21-4af4-a0ce-a174f436a646)
 
 -   ### Exemplo JSON
 `  {
@@ -94,12 +114,24 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
   ## Exemplos Inserir, Editar, Deletar e Listar Pedidos
 
 - GET - para listar: **https://localhost:3001/pedidos**
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/89911ea2-b576-41d7-9826-1984b321269f)
+
   
 - POST - para inserir: **https://localhost:3001/pedidos**
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/ebe64f2e-4a18-42c4-a60a-8978911c2b68)
+
   
 - PUT - para editar: **https://localhost:3001/pedidos/:id**
+
+  ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/29314b82-f0bc-4e9e-930b-51001385d9dd)
+
   
 - DELETE - para deletar: **https://localhost:3001/pedidos/:id**
+  
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/e82b9539-00e1-4d76-830b-f79b442b7e1d)
+
 
 -   ### Exemplo JSON
 `  {
@@ -122,9 +154,9 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 }`
 
 
-### Informações de uso 
-- Nas rotas *PUT* e *DELETE* é preciso informar o id do registro
-- Para inserir ou editar é preciso informar os atributos obrigatórios de cada um 
+### Parametros
+- Nas rotas *PUT* e *DELETE* é preciso informar o id do registro como parametro ( `:id` )
+- Para inserir ou editar é preciso informar os atributos obrigatórios de cada uma das rotas, informtadas no arquivo JSON
 
 
 
