@@ -14,7 +14,7 @@ Os benefícios do e-commerce são diversos, incluindo a conveniência de realiza
 
 # Pré-requisitos de acesso
 
-Para realizar o acesso ao nosso projeto é importante utilizar um navegador web para fazer a visualização do nosso front-end, para nosso back-end é recomendado utilizar o aplicativo desktop Postman e o MySQL Workbench.
+Para realizar o acesso ao nosso projeto é importante utilizar um navegador web para fazer a visualização do nosso front-end, para nosso back-end é recomendado utilizar o aplicativo desktop Postman e o MySQL Workbench, ou se ouver, uma aplicação.
 
 **ACESSO**: localhost:3001/
 
