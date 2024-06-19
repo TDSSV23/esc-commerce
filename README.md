@@ -34,18 +34,48 @@ Para listar todos os usuários cadastrados, acesse a seção de gerenciamento de
 
 Este modo de uso padronizado garante uma gestão eficiente e organizada dos usuários, permitindo que operações comuns sejam realizadas de forma segura e intuitiva.
 
-# Exemplos Inserir, Editar, Deletar e Listar Usuários
+# Exemplos Inserir, Editar, Deletar e Listar Clientes
 
-- **Como inserir Usuários**
+- GET - para listar: **https://localhost:3001/clientes**
   
-- **Como editar os Usuários**
+- POST - para inserir: **https://localhost:3001/clientes**
   
-- **Como deletar os Usuários**
+- PUT - para editar: **https://localhost:3001/clientes/:id**
+  
+- DELETE - para deletar: **https://localhost:3001/clientes/:id**
  
-- **Como listar todos os Usuários**
+# Exemplos Inserir, Editar, Deletar e Listar Produtos
+
+- GET - para listar: **https://localhost:3001/produtos**
+  
+- POST - para inserir: **https://localhost:3001/produtos**
+  
+- PUT - para editar: **https://localhost:3001/produtos/:id**
+  
+- DELETE - para deletar: **https://localhost:3001/produtos/:id**
+
+  # Exemplos Inserir, Editar, Deletar e Listar Categorias
+
+- GET - para listar: **https://localhost:3001/categorias**
+  
+- POST - para inserir: **https://localhost:3001/categorias**
+  
+- PUT - para editar: **https://localhost:3001/categorias/:id**
+  
+- DELETE - para deletar: **https://localhost:3001/categorias/:id**
+
+  # Exemplos Inserir, Editar, Deletar e Listar Pedidos
+
+- GET - para listar: **https://localhost:3001/pedidos**
+  
+- POST - para inserir: **https://localhost:3001/pedidos**
+  
+- PUT - para editar: **https://localhost:3001/pedidos/:id**
+  
+- DELETE - para deletar: **https://localhost:3001/pedidos/:id**
 
 
-COLOCA EM CADA UM OS EXEMPLOS COM O CODIGO PRONTO JÁ MAYCK, QUANDO COLOCAR PODE APAGAR ESSA MENSAGEM
+
 
 
 
