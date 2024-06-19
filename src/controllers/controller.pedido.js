@@ -31,6 +31,7 @@ class PedidoController {
                     console.error('Erro ao cadastrar pedido: ', err);
                     return res.status(500).json({ error: "Ocorreu um erro ao cadastrar o pedido." });
                 }
+            
 
                 return res.status(201).json({
                     message: "Pedido inserido com sucesso",

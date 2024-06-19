@@ -21,7 +21,7 @@ function fetchProdutos() {
                 
             });
         })
-        .catch(error => console.error('Erro:', error));
+        // .catch(error => console.error('Erro:', error));
 }
 
 function fetchCategorias() {
@@ -65,7 +65,7 @@ function fetchClientes() {
                 
             });
         })
-        .catch(error => console.error('Erro:', error));
+        // .catch(error => console.error('Erro:', error));
 }
 
 // Chama a função a cada 5 segundos
