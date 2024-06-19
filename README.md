@@ -18,7 +18,7 @@ Para realizar o acesso ao nosso projeto é importante utilizar um navegador web 
 
 **ACESSO**: localhost:3001/
 
-# Exemplos de uso
+# Exemplos de uso do FRONT-END
 
 - **Inserir Cliente**
 Para inserir um novo cliente no sistema, deve-se acessar a interface de gerenciamento de clientes e selecionar a opção "Adicionar Cliente". Será necessário fornecer informações obrigatórias, como nome, e-mail e senha. Em alguns casos, pode-se solicitar dados adicionais, como número de telefone e endereço. Após preencher os campos requeridos, deve-se confirmar a inserção para que o novo cliente seja salvo no banco de dados.
@@ -33,8 +33,8 @@ Para editar as informações de um cliente, acesse a lista de clientes e selecio
 Para listar todos os clientes cadastrados, acesse a seção de gerenciamento de clientes. A interface exibirá uma lista com os dados essenciais de cada cliente, como nome, e-mail e data de cadastro. Pode-se incluir funcionalidades de busca e filtros para facilitar a localização de clientes específicos, bem como opções para exportar a lista em diversos formatos (por exemplo, CSV ou PDF).
 
 Este modo de uso padronizado garante uma gestão eficiente e organizada dos clientes, permitindo que operações comuns sejam realizadas de forma segura e intuitiva.
-
-# Exemplos Inserir, Editar, Deletar e Listar Clientes
+# Exemplos BACK-END
+## Exemplos Inserir, Editar, Deletar e Listar Clientes
 
 - GET - para listar: **https://localhost:3001/clientes**
   
@@ -57,7 +57,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
     "cep": "11100000"
 }`
  
-# Exemplos Inserir, Editar, Deletar e Listar Produtos
+## Exemplos Inserir, Editar, Deletar e Listar Produtos
 
 - GET - para listar: **https://localhost:3001/produtos**
   
@@ -76,7 +76,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
    "id_categoria": "3"
 }`
 
-  # Exemplos Inserir, Editar, Deletar e Listar Categorias
+  ## Exemplos Inserir, Editar, Deletar e Listar Categorias
 
 - GET - para listar: **https://localhost:3001/categorias**
   
@@ -91,7 +91,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
    "nome": "categoria"
 }`
 
-  # Exemplos Inserir, Editar, Deletar e Listar Pedidos
+  ## Exemplos Inserir, Editar, Deletar e Listar Pedidos
 
 - GET - para listar: **https://localhost:3001/pedidos**
   
@@ -122,7 +122,7 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 }`
 
 
-## Informações de uso 
+### Informações de uso 
 - Nas rotas *PUT* e *DELETE* é preciso informar o id do registro
 - Para inserir ou editar é preciso informar os atributos obrigatórios de cada um 
 
