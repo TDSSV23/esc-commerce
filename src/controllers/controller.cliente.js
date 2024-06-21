@@ -32,9 +32,10 @@ class ClienteController {
         const cidade = p.cidade;
         const uf = p.uf;
         const cep = p.cep;
+        const imagem = p.imagem;
 
         try {
-            ClienteModel.createCliente(nome, email, senha, logradouro, numero, bairro, cidade, uf, cep, function (err, result) {
+            ClienteModel.createCliente(nome, email, senha, logradouro, numero, bairro, cidade, uf, cep, imagem, function (err, result) {
                 if (err) {
                     console.error('Erro ao cadastrar cliente: ', err);
                     return res.status(500).json({ error: 'Ocorreu um erro ao cadastrar o cliente' });
@@ -68,9 +69,10 @@ class ClienteController {
         const cidade = p.cidade;
         const uf = p.uf;
         const cep = p.cep;
+        const imagem = p.imagem
 
         try {
-            ClienteModel.editCliente(id, nome, email, logradouro, numero, bairro, cidade, uf, cep, function (err, result) {
+            ClienteModel.editCliente(id, nome, email, logradouro, numero, bairro, cidade, uf, cep, imagem,function (err, result) {
 
                 if (err) {
                     console.error("Erro ao editar o usuário: ", err);

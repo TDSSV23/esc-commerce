@@ -25,11 +25,12 @@ class ProdutoController {
         const preco = p.preco;
         const qtd_estoque = p.qtd_estoque;
         const id_categoria = p.id_categoria;
+        const imagem = p.imagem;
 
 
 
         try {
-            ProdutoModel.createProduto(nome, descricao, preco, qtd_estoque, id_categoria, function (err, result) {
+            ProdutoModel.createProduto(nome, descricao, preco, qtd_estoque, id_categoria, imagem, function (err, result) {
                 if (err) {
                     console.error('Erro ao cadastrar produto: ', err);
                     return res.status(500).json({ error: 'Ocorreu um erro ao cadastrar o produto' });
@@ -59,9 +60,10 @@ class ProdutoController {
         const preco = p.preco;
         const qtd_estoque = p.qtd_estoque;
         const id_categoria = p.id_categoria;
+        const imagem = p.imagem;
 
         try {
-            ProdutoModel.editProduto(id, nome, descricao, preco, qtd_estoque, id_categoria, function (err, result) {
+            ProdutoModel.editProduto(id, nome, descricao, preco, qtd_estoque, id_categoria, imagem, function (err, result) {
 
                 if (err) {
                     console.error("Erro ao editar o produto: ", err);

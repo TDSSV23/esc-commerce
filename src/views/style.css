@@ -72,3 +72,8 @@ body {
     opacity: 0.8;
   }
   
+  .produto-photo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }

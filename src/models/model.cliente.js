@@ -15,14 +15,14 @@ class ClienteModel {
     }
 
     // Método para criar um novo cliente
-    static createCliente(nome, email, senha, logradouro, numero, bairro, cidade, uf, cep, callBack) {
+    static createCliente(nome, email, senha, logradouro, numero, bairro, cidade, uf, cep, imagem, callBack) {
         //apenas numeros
         numero = numero.replace(/\D/g, '');
         //criptografando
         const hash = bcrypt.hashSync(senha, 10);
         senha = hash
-        let sql = `insert into cliente (nome, email, senha, logradouro, numero, bairro, cidade, uf, cep) values (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
-        con.query(sql, [nome, email, senha, logradouro, numero, bairro, cidade, uf, cep], function (err, result) {
+        let sql = `insert into cliente (nome, email, senha, logradouro, numero, bairro, cidade, uf, cep, imagem) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+        con.query(sql, [nome, email, senha, logradouro, numero, bairro, cidade, uf, cep, imagem], function (err, result) {
             if (err)
                 callBack(err, null)
             else
@@ -32,10 +32,10 @@ class ClienteModel {
 
 
     //metodo para editar um cliente existente
-    static editCliente(id, nome, email, logradouro, numero, bairro, cidade, uf, cep, callBack) {
-        let sql = `update cliente set nome = ?, email = ?, logradouro = ?, numero = ?, bairro = ?, cidade = ?, uf = ?, cep = ? WHERE id_cliente = ?;`;
+    static editCliente(id, nome, email, logradouro, numero, bairro, cidade, uf, cep, imagem, callBack) {
+        let sql = `update cliente set nome = ?, email = ?, logradouro = ?, numero = ?, bairro = ?, cidade = ?, uf = ?, cep = ?, imagem=? WHERE id_cliente = ?;`;
 
-        con.query(sql, [nome, email, logradouro, numero, bairro, cidade, uf, cep, id], function (err, result) {
+        con.query(sql, [nome, email, logradouro, numero, bairro, cidade, uf, cep, imagem, id], function (err, result) {
             if (err)
                 callBack(err, null)
             else

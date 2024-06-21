@@ -12,6 +12,7 @@ function fetchProdutos() {
                 div.className = 'produto-item';
                 div.innerHTML = `
                 <p id='id'>${produto.id_produto}</p>
+                <img src='${produto.imagem}' class='produto-photo'>
                 <h3>${produto.nome}</h3>
                 <h5>${produto.nome_categoria}</h5>
                 <p>Descrição: ${produto.descricao}</p>
@@ -58,6 +59,7 @@ function fetchClientes() {
                 div.className = 'cliente-item';
                 div.innerHTML = `
                 <p id='id_cliente'>${cliente.id_cliente}</p>
+                <img src='${cliente.imagem}' class='produto-photo'>
                 <h3>${cliente.nome}</h3>
                 <p>${cliente.email}</p>
                 <p>${cliente.cidade}</p>
