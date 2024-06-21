@@ -3,7 +3,7 @@ function fetchProdutos() {
     fetch('http://localhost:3001/produtos')
         .then(response => response.json())
         .then(data => {
-        
+
             var divProdutos = document.getElementById('produtos');
             divProdutos.innerHTML = ''; // Limpa os produtos antigos
 
@@ -13,6 +13,7 @@ function fetchProdutos() {
                 div.innerHTML = `
                 <p id='id'>${produto.id_produto}</p>
                 <h3>${produto.nome}</h3>
+                <h5>${produto.nome_categoria}</h5>
                 <p>Descrição: ${produto.descricao}</p>
                 <p>Estoque: ${produto.qtd_estoque}</p>
                 <p>Preço: ${produto.preco}</p>
@@ -65,8 +66,34 @@ function fetchClientes() {
 
             });
         })
+    
     // .catch(error => console.error('Erro:', error));
 }
+
+function fetchPedidos() {
+    console.log('isso funciona')
+    fetch('http://localhost:3001/pedidos')
+        .then(response => response.json())
+        .then(data => {
+            var divPedido = document.getElementById('pedido');
+            divPedido.innerHTML = ''; // Limpa os produtos antigos
+
+            data.forEach(pedidos => {
+                var div = document.createElement('div');
+                div.className = 'pedido-item';
+                div.innerHTML = `
+                    <p id='id_pedido'>${pedidos.id_pedidos}</p>
+                    <h3>Detalhes do Pedido ${pedidos.id_pedidos}</h3>
+                    <p>${pedidos.nome_cliente}</p>
+                    <p>${pedidos.data_criacao}</p>
+                    <p>${pedidos.status}</p>
+                    <button id='deleteButton' onclick='deleteButtonPedidos(${pedidos.id_pedido})'>Delete</button>`;
+                divPedido.appendChild(div);
+            });
+        })
+    // .catch(error => console.error('Erro:', error));
+}
+
 
 
 
@@ -141,8 +168,6 @@ function deleteButtonProdutos(id) {
     setInterval(fetchProdutos, 500)
 };
 function deleteButtonClientes(id) {
-
-
     console.log(id)// Substitua isso pelo id do produto que você deseja deletar
 
     fetch(`http://localhost:3001/clientes/${id}`, {
@@ -158,6 +183,24 @@ function deleteButtonClientes(id) {
 
 };
 
+function deleteButtonPedidos(id) {
+
+    console.log(id)// Substitua isso pelo id do produto que você deseja deletar
+
+    fetch(`http://localhost:3001/pedidos/${id}`, {
+        method: 'DELETE',
+    })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+
+        
+    };
+    setInterval(fetchPedidos, 500)
+    
+
 
 
 
@@ -165,4 +208,5 @@ window.onload = (event) => {
     fetchCategorias()
     fetchClientes()
     fetchProdutos()
+    fetchPedidos()
 };

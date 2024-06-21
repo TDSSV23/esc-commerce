@@ -14,12 +14,12 @@ body {
     border-radius: 20px;
   }
   
-  #produtos, #categoria, #clientes {
+  #produtos, #categoria, #clientes, #pedido {
     display: flex;
     flex-wrap: wrap;
   }
   
-  .produto-item, .categoria-item, .cliente-item {
+  .produto-item, .categoria-item, .cliente-item, .pedido-item {
     border: 1px solid #ddd;
     margin: 10px;
     padding: 20px;
@@ -28,11 +28,11 @@ body {
     box-sizing: border-box;
   }
   
-  .produto-item h3, .categoria-item h3, .cliente-item h3 {
+  .produto-item h3, .categoria-item h3, .cliente-item h3, .pedido-item h3 {
     margin-top: 0;
   }
   
-  .produto-item p, .categoria-item p, .cliente-item p{
+  .produto-item p, .categoria-item p, .cliente-item p, .pedido-item p{
     margin-bottom: 0;
   }
 

@@ -4,7 +4,7 @@ import { con } from "../config/database.js";
 class ProdutoModel {
 
     static getAllProdutos(callBack) {
-        let sql = `select * from produto`;
+        let sql = `SELECT produto.id_produto, produto.nome, produto.descricao, produto.qtd_estoque, produto.preco, categoria.nome AS nome_categoria FROM produto JOIN categoria ON produto.id_categoria = categoria.id_categoria;`;
 
         con.query(sql, function (err, result) {
             if (err)
@@ -36,14 +36,14 @@ class ProdutoModel {
         })
     }
 
-    static removeProduto(id, callBack){
+    static removeProduto(id, callBack) {
         let sql = `delete from produto where id_produto=?`;
 
-        con.query(sql, [id], function(err, result){
+        con.query(sql, [id], function (err, result) {
             if (err)
                 callBack(err, null)
             else
-            callBack(null, result)
+                callBack(null, result)
         })
     }
 

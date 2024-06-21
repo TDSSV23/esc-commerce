@@ -4,7 +4,7 @@ class PedidoModel {
 
     // Método para obter todos os Pedidos
     static getAllPedido(callback) {
-        let sql = `select * from pedido`;
+        let sql = `select pedido.id_pedidos, pedido.id_cliente, pedido.data_criacao, pedido.status, cliente.nome AS nome_cliente FROM cliente JOIN pedido ON pedido.id_cliente = cliente.id_cliente;`;
 
         con.query(sql, function (err, result) {
             if (err)
