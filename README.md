@@ -9,6 +9,9 @@ O **e-commerce** se caracteriza pela utilização de plataformas digitais que fa
 
 Os benefícios do e-commerce são diversos, incluindo a conveniência de realizar compras a qualquer hora e lugar, a ampliação do mercado consumidor além das fronteiras geográficas e a redução de custos operacionais em comparação com lojas físicas. Por outro lado, também apresenta desafios, como a necessidade de assegurar a segurança das transações online, a gestão eficiente de estoque e logística e a manutenção de um atendimento ao cliente de alta qualidade.
 
+# Collections
+- As Collections são usadas para organizar e gerenciar dados dentro de um banco de dados, oferecendo flexibilidade e desempenho em operações de leitura e gravação.
+
 
 ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/8799a55c-1d3b-4ebf-b9b8-c78a798dabbb)
 
@@ -34,6 +37,7 @@ Para listar todos os clientes cadastrados, acesse a seção de gerenciamento de 
 
 Este modo de uso padronizado garante uma gestão eficiente e organizada dos clientes, permitindo que operações comuns sejam realizadas de forma segura e intuitiva.
 # Exemplos BACK-END
+ *As imagens represantam o retorno esperado pela API
 ## Exemplos Inserir, Editar, Deletar e Listar Clientes
 
 - GET - para listar: **https://localhost:3001/clientes**
@@ -68,13 +72,24 @@ Este modo de uso padronizado garante uma gestão eficiente e organizada dos clie
 ## Exemplos Inserir, Editar, Deletar e Listar Produtos
 
 - GET - para listar: **https://localhost:3001/produtos**
-  
+
+  ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/b91344f2-9322-49c0-9f2c-112f50fc58b4)
+
   
 - POST - para inserir: **https://localhost:3001/produtos**
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/63b31919-3877-4afb-9d34-187e0297b3dc)
+
   
 - PUT - para editar: **https://localhost:3001/produtos/:id**
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/7f56dbf0-81ee-4ebe-b2e4-9b071902d248)
+
   
 - DELETE - para deletar: **https://localhost:3001/produtos/:id**
+
+![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/4a7a7705-e13d-4734-8617-7f63450aa4d8)
+
 
 -   ### Exemplo JSON
 `   {
