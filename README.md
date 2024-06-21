@@ -9,9 +9,9 @@ O **e-commerce** se caracteriza pela utilização de plataformas digitais que fa
 
 Os benefícios do e-commerce são diversos, incluindo a conveniência de realizar compras a qualquer hora e lugar, a ampliação do mercado consumidor além das fronteiras geográficas e a redução de custos operacionais em comparação com lojas físicas. Por outro lado, também apresenta desafios, como a necessidade de assegurar a segurança das transações online, a gestão eficiente de estoque e logística e a manutenção de um atendimento ao cliente de alta qualidade.
 
-#Collections
+# Collections
+- As Collections são usadas para organizar e gerenciar dados dentro de um banco de dados, oferecendo flexibilidade e desempenho em operações de leitura e gravação.
 
-As Collections são usadas para organizar e gerenciar dados dentro de um banco de dados, oferecendo flexibilidade e desempenho em operações de leitura e gravação.
 
 ![image](https://github.com/TDSSV23/esc-commerce/assets/124847684/8799a55c-1d3b-4ebf-b9b8-c78a798dabbb)
 
